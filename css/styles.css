@@ -1,191 +1,8 @@
-#result, #error {
-  display: none;
-  margin-top: 2em;
-}
-
-.form-label {
-  display: none;
-}
-
 body {
-  background-color: #B5AACF;
+  background-color: #19053A;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#results {
-  text-align: center;
-  margin-top: 20px;
-  margin-left: 0px;
-}
-
-.bigtext {
-    font-family: Helvetica, Arial;
-}
-.bigtext > div {
-    line-height: 0.95rem;
-}
-
-#results img {
-  width: 75px;
-  margin: 10px;
-}
-
-.checkboxes {
-  margin-top: 10px;
-}
-
-
-
-/*.btn-custom {
-  background-color: #8180c4;
-  border-color: #8180c4;
-}
-.btn-custom:hover,
-.btn-custom:focus,
-.btn-custom:active,
-.btn-custom.active {
-  background-color: #706fbc;
-  border-color: #5e5db4;
-}
-.btn-custom.disabled:hover,
-.btn-custom.disabled:focus,
-.btn-custom.disabled:active,
-.btn-custom.disabled.active,
-.btn-custom[disabled]:hover,
-.btn-custom[disabled]:focus,
-.btn-custom[disabled]:active,
-.btn-custom[disabled].active,
-fieldset[disabled] .btn-custom:hover,
-fieldset[disabled] .btn-custom:focus,
-fieldset[disabled] .btn-custom:active,
-fieldset[disabled] .btn-custom.active {
-  background-color: #8180c4;
-  border-color: #8180c4;
-}*/
-
-header {
-  height: auto;
-  border-bottom: 1px dashed #BFA6CC;
-  text-align: center;
-
-}
-
-h1 {
-  text-align: center;
-  font-size: 48px;
-}
-
-#results ul {
-  list-style: none;
-  margin: 0 0 1em 0;
-  padding: 0;
-  text-align: center;
-}
-
-#results li {
-  border: 1px solid black;
-  padding: 3px 6px;
-  margin: 3px;
-  display: inline-block;
-  margin-right: 10px;
-  text-align: center;
-}
-
-/*.container {
-  background-color: #FFE4CC;
-  width: 800px;
-  margin: 1em auto;
-  padding: 15px;
-  border: 3px solid gray;
-  border-radius: 15px;
-}*/
-
-/*input, .form-control {
-  appearance: none;
-  font-family: inherit;
-  font-size: inherit;
-  border: 0;
-  outline: 0;
-  box-shadow: none !important;
-  flex: 1 100%;
-  padding: .25rem .5rem;
-  border-bottom: 1px solid #d0dad8;
-  border-radius: 0px;
-  background: transparent;
-  transition-duration: .1s;
-
-  display: inline-block;
-
-}
-
-input:hover,
-input:active,
-input:focus,
-textarea:hover,
-textarea:active,
-textarea:focus {
-  border-bottom-color: #0e745c;
-  box-shadow: 0 2px 1px -1px #d0dad8;
-}
-
-
-.form-label {
-  float: left;
-  margin-top: 10px;
-  margin-right: 5px;
-}
-
-.form-control {
-  float: left;
-  margin-right: 10px;
-}*/
-
-
-/*.btn {
-  display: inline;
-  float: left;
-  margin-top: 20px;
-}*/
-
-/*a {
-  border-color: #d0dad8;
-  color: #432F75;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-}
-  a:hover,
-  a:active,
-  a:focus {
-    border-color: #0e745c;
-  }
-  a::before {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: .125em;
-    color: #d0dad8;
-    font-family: FontAwesome;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 100;
-    -webkit-transition-duration: .1s;
-    transition-duration: .1s;
-  }
-    a:hover::before,
-    a:active::before,
-    a:focus::before {
-      color: #0e745c;
-    }*/
-
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
-/*:root {
-  background: #94c6fd;
-  box-sizing: border-box;
-  padding: 3em;
-}
-:root *, :root:before, :root:after {
-  box-sizing: inherit;
-  -webkit-font-smoothing: antialiased !important;
-}*/
 .container {
   background: #FFEACC;
   box-shadow: 0 2px 2px #4A2D74;
@@ -196,36 +13,36 @@ textarea:focus {
   padding: 3em;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   position: relative;
+  border-radius: 15px;
 }
-/*:root .container + .container {
-  margin-top: 3em;
-}*/
 
-/*form h2, form .fields {
-  margin: 0;
-  padding: 0;
-}*/
-
-/*:root {
-  box-sizing: border-box;
-  color: #444;
-  font-family: 'Droid Sans', Arial, sans-serif;
+h1 {
+  text-align: center;
+  font-size: 48px;
 }
-:root *, :root *:before, :root *:after {
-  box-sizing: inherit;
-  font-family: inherit;
-}*/
+
+#result, #error {
+  display: none;
+  margin-top: 2em;
+  text-align: center;
+}
+
+#error {
+  color: red;
+}
+
+#canvas {
+  margin-left: 33%;
+}
+
+
 
 form {
   background: #FFEACC;
-  /*box-shadow: 0 2px 2px #499efc;*/
-  margin: 0 auto;
   max-width: 400px;
   padding: 1.5em;
 }
-form h2 {
-  text-align: center;
-}
+
 form .fields {
   list-style: none;
   margin: 20px 0;

@@ -16,8 +16,26 @@ var triangle = function(side1, side2, side3) {
 
 // ------------------------------------------------------------------
 
+// Nvm. Math is hard.
+// function draw(side1, side2, side3) {
+//   var canvas = document.getElementById('canvas');
+//   if (canvas.getContext) {
+//     var ctx = canvas.getContext('2d');
+
+//     ctx.beginPath();
+//     ctx.moveTo(0,150); // starting point at lower left corner of 150x150 grid
+//     ctx.lineTo(side1,150); // draw side1 as bottom
+//     ctx.lineTo(side1,150-side2);
+//     ctx.fill();
+//   }
+// }
+
+// ------------------------------------------------------------------
+
 $(document).ready(function() {
  
+ // draw(100, 100, 100);
+
   $("form#triangle-sides").submit(function(event) {
     
     $("#error").hide();
@@ -41,7 +59,7 @@ $(document).ready(function() {
         $("#result p").text("You've made an " + triangleType + " triangle!")
         $("#result").show();
     }
-
+    
     event.preventDefault();
   });
 

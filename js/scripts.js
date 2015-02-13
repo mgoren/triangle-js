@@ -29,11 +29,17 @@ $(document).ready(function() {
 
     var triangleType = triangle(side1, side2, side3);
 
-    if (isNaN(side1) || isNaN(side2) || isNaN(side3) || triangleType == "not a triangle") {
-      $("#error").show();
-    } else {
-      $("#result p").text(triangleType);
-      $("#result").show();      
+    switch(triangleType) {
+      case "not a triangle":
+        $("#error").show();
+        break;
+      case "scalene":
+        $("#result p").text("You've made a scalene triangle!");
+        $("#result").show();
+        break;
+      default:
+        $("#result p").text("You've made an " + triangleType + " triangle!")
+        $("#result").show();
     }
 
     event.preventDefault();
